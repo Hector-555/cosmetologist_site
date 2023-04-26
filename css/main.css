@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.nav {
+  background-color: #fff;
+}
+.nav-icons {
+  width: 29px;
+  height: 29px;
+}
+.nav a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.nav-up {
+  width: 83.33%;
+  min-height: 84px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid rgba(85, 166, 48, 0.5);
+}
+.nav-up_contacts {
+  width: 54%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-up_phone {
+  min-width: 268px;
+}
+.nav-up_phone span {
+  margin-left: 22px;
+  font-size: 25px;
+}
+.nav-up_socials {
+  min-width: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+}
+
+.link-logo {
+  margin-right: 460px;
+}
+
+.nav-down {
+  width: 83.33%;
+  min-height: 68px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e5e5e5;
+  color: #424242;
+}/*# sourceMappingURL=main.css.map */
