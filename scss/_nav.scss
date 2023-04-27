@@ -1,5 +1,6 @@
 .nav {
     background-color: #fff;
+    font-weight: 500;
 
     &-icons {
         width: 29px;
@@ -23,29 +24,39 @@
     border-bottom: 1px solid rgba(85, 166, 48, 0.5);
 
     &_contacts {
-        width: 54%;
+        width: 540px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &_phone {
-        min-width: 268px;
+        img {
+            width: 28px;
+            height: 28px;
+        }
         span {
             margin-left: 22px;
             font-size: 25px;
+            min-width: 218px;
         }
     }
     &_socials {
-        min-width: 68px;
+        min-width: 83px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 26px;
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
     }
 }
 
-.link-logo {
-    margin-right: 460px;
+.link-logo_container {
+    margin-top: 12px;
+    width: 55%;
 }
 
 .nav-down {
