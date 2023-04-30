@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.green-style {
+  background-color: #55a630;
+  color: #fff;
+}
+
+.purpure-style {
+  background-color: #4340b4;
+  color: #fff;
+}
+
+.green-blue-style {
+  background-color: #00a896;
+  color: #fff;
+}
+
+.light-green-style {
+  background-color: #ecf9eb;
+  color: #55a630;
+}
+
+.light-purpure-style {
+  background-color: rgba(83, 81, 196, 0.1);
+  color: #4340b4;
+}
+
+.light-green-blue-style {
+  background-color: rgba(0, 168, 150, 0.1);
+  color: #00a896;
+}
+
 .nav {
   background-color: #fff;
   font-weight: 500;
@@ -129,6 +159,8 @@ h1 {
   position: absolute;
   left: 8.33%;
   bottom: -160px;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+  z-index: 1;
 }
 .achievements span {
   font-weight: 700;
@@ -140,6 +172,141 @@ h1 {
   font-weight: 400;
   font-size: 23px;
   line-height: 28px;
+}
+
+.courses {
+  background-color: #fff;
+  background-image: url(../img/courses_bgr.png);
+  background-repeat: no-repeat;
+  background-position: right 0vw top;
+  position: relative;
+}
+.courses-title {
+  font-size: 35px;
+  line-height: 28px;
+  font-weight: 600;
+  padding-top: 363px;
+  margin-bottom: 77px;
+  text-align: center;
+}
+.courses_left-arrow {
+  width: 16px;
+  height: 24px;
+  position: absolute;
+  top: 750px;
+  left: 75px;
+}
+.courses_right-arrow {
+  width: 16px;
+  height: 24px;
+  position: absolute;
+  top: 750px;
+  right: 75px;
+}
+.courses-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 5%;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+.courses_card {
+  width: 30%;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+  position: relative;
+  background-color: #fff;
+}
+.courses_card_bird {
+  position: absolute;
+  right: 23px;
+  top: 13px;
+}
+.courses_card_wrapper {
+  margin-left: 16px;
+  padding-top: 16px;
+}
+.courses_card_description {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+.courses_card_title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 22px;
+}
+.courses_card_format {
+  width: 166px;
+  height: 39px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 39px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 23px;
+  border-radius: 9px;
+}
+.courses_card_date {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.courses_card_about {
+  width: 175px;
+  height: 110px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 12px;
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
+.courses_card_free {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 21px;
+}
+.courses_card_img {
+  width: 135px;
+  height: 159px;
+  position: absolute;
+  top: 213px;
+  right: 16px;
+}
+.courses_card_btn {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.courses_spots {
+  width: 139px;
+  height: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.courses_spots div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #b7ecb1;
+  cursor: pointer;
+}
+div .courses_spots_active {
+  background-color: #55a630;
 }
 
 body {

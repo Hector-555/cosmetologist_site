@@ -31,13 +31,13 @@
     border: none;
     cursor: pointer;
     &_left {
-        background-color: #55a630;
+        background-color: $green;
         color: #fff;
         margin-right: 20px;
     }
     &_right {
-        color: #55a630;
-        border: 1px solid #55a630;
+        color: $green;
+        border: 1px solid $green;
         background: none;
     }
   }
@@ -63,12 +63,14 @@ h1 {
   position: absolute;
   left: 8.33%;
   bottom: -160px;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+  z-index: 1;
 
   span {
       font-weight: 700;
       font-size: 45px;
       line-height: 45px;
-      color: #55a630;
+      color: $green;
   }
   p {
       font-weight: 400;
