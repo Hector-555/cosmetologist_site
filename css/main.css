@@ -180,6 +180,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: right 0vw top;
   position: relative;
+  margin-bottom: 175px;
 }
 .courses-title {
   font-size: 35px;
@@ -195,6 +196,7 @@ h1 {
   position: absolute;
   top: 750px;
   left: 75px;
+  cursor: pointer;
 }
 .courses_right-arrow {
   width: 16px;
@@ -202,6 +204,7 @@ h1 {
   position: absolute;
   top: 750px;
   right: 75px;
+  cursor: pointer;
 }
 .courses-container {
   display: flex;
@@ -309,8 +312,59 @@ div .courses_spots_active {
   background-color: #55a630;
 }
 
+.about {
+  background-color: #fff;
+  width: 83.33vw;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 177px;
+}
+.about_img-container {
+  margin-right: 10.08%;
+}
+.about_img-container img {
+  width: 40.97vw;
+  height: 666px;
+}
+.about p, .about_link {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+}
+.about-about {
+  color: #858585;
+  margin-bottom: 30px;
+}
+.about h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 37px;
+  margin-bottom: 75px;
+}
+.about h3 span {
+  color: #55a630;
+}
+.about-description {
+  margin-bottom: 60px;
+}
+.about_link {
+  width: 265px;
+  margin-left: 226px;
+}
+.about a {
+  cursor: pointer;
+  color: #55a630;
+  text-decoration: none;
+}
+.about a span {
+  margin-right: 48px;
+}
+.about a img {
+  width: 58px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #fff;
   color: #424242;
 }/*# sourceMappingURL=main.css.map */

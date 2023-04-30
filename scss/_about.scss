@@ -1,0 +1,51 @@
+.about {
+    background-color: #fff;
+    width: 83.33vw;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 177px;
+
+    &_img-container {
+        margin-right: 10.08%;
+        img {
+            width: 40.97vw;
+            height: 666px;
+        }
+    }
+    p, &_link {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    &-about {
+        color: #858585;
+        margin-bottom: 30px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37px;
+        margin-bottom: 75px;
+        span {
+            color: $green;
+        }
+    }
+    &-description {
+        margin-bottom: 60px;
+    }
+    &_link {
+        width: 265px;
+        margin-left: 226px;
+    }
+    a {
+        cursor: pointer;
+        color: $green;
+        text-decoration: none;
+        span {
+            margin-right: 48px;
+        }
+        img {
+            width: 58px;
+        }
+    }
+}

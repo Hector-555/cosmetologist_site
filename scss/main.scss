@@ -2,12 +2,13 @@
 @import 'nav.scss';
 @import 'main-section.scss';
 @import 'courses.scss';
+@import 'about.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #e5e5e5;
+    background-color: #fff;
     color: #424242;
 }
