@@ -363,6 +363,120 @@ div .courses_spots_active {
   width: 58px;
 }
 
+@media (max-width: 1160px) {
+  .about_link {
+    margin-left: 160px;
+  }
+}
+.learn {
+  margin-bottom: 175px;
+}
+.learn h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 76px;
+}
+.learn a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  text-decoration: none;
+}
+.learn p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  margin-left: 23px;
+}
+.learn_top-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 0 auto;
+  width: 83.33%;
+  margin-bottom: 55px;
+}
+.learn_top-block > div {
+  width: 570px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(35, 35, 35), 0.5;
+}
+.learn_top-block > div:first-child {
+  background-image: url(../img/learn/courses-block-bgr.png);
+  position: relative;
+}
+.learn_top-block > div:first-child div:first-child {
+  margin: 35px 46px 61px 28px;
+}
+.learn_top-block > div:first-child div:nth-child(3) {
+  width: 65px;
+  height: 66px;
+  position: absolute;
+  bottom: 3px;
+  right: 127px;
+}
+.learn_top-block > div:first-child div:nth-child(4) {
+  width: 84px;
+  height: 0px;
+  position: absolute;
+  bottom: 180px;
+  right: 85px;
+}
+.learn_top-block > div:nth-child(2) {
+  background-image: url(../img/learn/online-block-bgr.png);
+}
+.learn_top-block > div:nth-child(2) div {
+  margin-top: 193px;
+  margin-left: 25px;
+}
+.learn_bottom-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 54px;
+  margin: 0 auto;
+  width: 83.33%;
+  margin-bottom: 175px;
+}
+.learn_bottom-block > div {
+  width: 364px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(35, 35, 35), 0.5;
+}
+.learn_bottom-block > div:first-child {
+  background-image: url(../img/learn/master-class-block-bgr.png);
+}
+.learn_bottom-block > div:first-child div {
+  margin-top: 197px;
+  margin-left: 28px;
+}
+.learn_bottom-block > div:nth-child(2) {
+  background-image: url(../img/learn/shedule-block-bgr.png);
+}
+.learn_bottom-block > div:nth-child(2) div {
+  margin-top: 22px;
+  margin-left: 28px;
+}
+.learn_bottom-block > div:nth-child(3) {
+  background-image: url(../img/learn/promo-block-bgr.png);
+}
+.learn_bottom-block > div:nth-child(3) div {
+  margin-top: 201px;
+  margin-left: 28px;
+}
+
+@media (max-width: 1175px) {
+  .learn a {
+    font-size: 25px;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
