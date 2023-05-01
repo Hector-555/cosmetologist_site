@@ -477,6 +477,46 @@ div .courses_spots_active {
     font-size: 25px;
   }
 }
+.models-search {
+  width: 83.33%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 177px;
+}
+.models-search h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #55a630;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+.models-search p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  margin-bottom: 70px;
+}
+.models-search button {
+  width: 385px;
+  height: 75px;
+  background-color: #55a630;
+  color: #fff;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 26px;
+  border: none;
+  cursor: pointer;
+}
+.models-search img {
+  width: 34.58vw;
+  height: 459px;
+}
+.models-search_text-container {
+  width: 43.68vw;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
