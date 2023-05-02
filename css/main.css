@@ -633,6 +633,75 @@ h1 {
   line-height: 26px;
 }
 
+.why-us {
+  margin-bottom: 166px;
+}
+.why-us h2 {
+  font-size: 35px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.why-us h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.why-us p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.why-us_card-container {
+  width: 83.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.42%;
+}
+.why-us_card-container div {
+  position: relative;
+  width: 31.67%;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+}
+.why-us_card-container div span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 36px;
+  position: absolute;
+}
+.why-us_card-container div:nth-child(1) {
+  padding: 40px 15px 12px 31px;
+}
+.why-us_card-container div:nth-child(1) span {
+  color: rgba(85, 166, 48, 0.25);
+  bottom: 68px;
+  right: 26px;
+}
+.why-us_card-container div:nth-child(2) {
+  padding: 40px 21px 70px 31px;
+  background-color: #b7ecb1;
+}
+.why-us_card-container div:nth-child(2) span {
+  color: rgba(255, 255, 255, 0.3);
+  top: 50px;
+  right: 25px;
+}
+.why-us_card-container div:nth-child(3) {
+  padding: 28px 18px 28px 32px;
+}
+.why-us_card-container div:nth-child(3) h4 {
+  margin-bottom: 14px;
+}
+.why-us_card-container div:nth-child(3) span {
+  color: rgba(85, 166, 48, 0.25);
+  bottom: 95px;
+  right: 18px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
