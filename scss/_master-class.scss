@@ -1,0 +1,114 @@
+.master-class {
+    position: relative;
+    margin-bottom: 173px;
+    h2 {
+        font-size: 35px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    > p {
+        font-size: 25px;
+        line-height: 26px;
+        font-weight: 500;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    &_left-arrow {
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 375px;
+        left: 75px;
+        cursor: pointer;
+    }
+    &_right-arrow {
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 375px;
+        right: 75px;
+        cursor: pointer;
+    }
+    &_cards-container {
+        width: 83.33%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 75px;
+        > div {
+            width: 43.33%;
+            box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &_cards-description {
+        display: flex;
+        div:first-child {
+            width: 70.58%;
+            padding-left: 5.48%;
+            padding-top: 15px;
+            position: relative;
+        }
+        div:nth-child(2) {
+            width: 29.42%;
+            display: flex;
+            flex-direction: column;
+            p {
+                min-height: 132px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 132px;
+                background-color: #ecf9eb;
+            }
+            button {
+                min-height: 98px;
+                background-color: $green;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                img {
+                    width: 25px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    &_arrow-bold {
+        position: absolute;
+        bottom: 14px;
+        right: -18.53%;
+        width: 122px;
+        height: 108px;
+    }
+    &_arrow-thin {
+        position: absolute;
+        right: 13.08%;
+        bottom: 13px;
+        width: 24px;
+        height: 24px;
+    }
+    &_cards-date {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &_cards-description {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &_cards-couch {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
