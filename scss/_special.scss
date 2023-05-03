@@ -1,0 +1,41 @@
+.special {
+    margin-bottom: 175px;
+    position: relative;
+    h2 {
+        font-size: 35px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    &_card-container {
+        width: 83.33%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 75px;
+        gap: 2.5%;
+        div {
+            width: 31.67%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &_left-arrow {
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 285px;
+        left: 75px;
+        cursor: pointer;
+    }
+    &_right-arrow {
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 285px;
+        right: 75px;
+        cursor: pointer;
+    }
+}

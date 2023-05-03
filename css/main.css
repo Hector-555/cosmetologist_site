@@ -247,6 +247,7 @@ h1 {
 .courses_card_wrapper {
   margin-left: 16px;
   padding-top: 16px;
+  width: 100%;
 }
 .courses_card_description {
   font-weight: 600;
@@ -700,6 +701,48 @@ h1 {
   color: rgba(85, 166, 48, 0.25);
   bottom: 95px;
   right: 18px;
+}
+
+.special {
+  margin-bottom: 175px;
+  position: relative;
+}
+.special h2 {
+  font-size: 35px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.special_card-container {
+  width: 83.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 75px;
+  gap: 2.5%;
+}
+.special_card-container div {
+  width: 31.67%;
+}
+.special_card-container div img {
+  width: 100%;
+}
+.special_left-arrow {
+  width: 16px;
+  height: 24px;
+  position: absolute;
+  top: 285px;
+  left: 75px;
+  cursor: pointer;
+}
+.special_right-arrow {
+  width: 16px;
+  height: 24px;
+  position: absolute;
+  top: 285px;
+  right: 75px;
+  cursor: pointer;
 }
 
 body {
