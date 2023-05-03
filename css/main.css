@@ -745,6 +745,62 @@ h1 {
   cursor: pointer;
 }
 
+.form {
+  width: 83.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 175px;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+  min-height: 526px;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 28px;
+  color: #55a630;
+  padding-top: 75px;
+  margin-bottom: 20px;
+}
+.form p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+.form form {
+  width: 427px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.form form input:nth-child(1) {
+  height: 60px;
+  padding-left: 34px;
+  margin-bottom: 15px;
+  border: 1px solid #55a630;
+}
+.form form input:nth-child(2) {
+  height: 60px;
+  padding-left: 34px;
+  margin-bottom: 31px;
+  border: 1px solid #55a630;
+}
+.form form input:nth-child(3) {
+  height: 71px;
+  background-color: #55a630;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
