@@ -1,14 +1,16 @@
 .about {
     background-color: #fff;
     width: 83.33vw;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 177px;
 
     &_img-container {
         margin-right: 10.08%;
+        width: 40.97vw;
         img {
-            width: 40.97vw;
+            width: 100%;
         }
     }
     p, &_link {
@@ -42,6 +44,12 @@
         cursor: pointer;
         color: $green;
         text-decoration: none;
+        &:hover {
+            color: #b7ecb1;
+        }
+        &:active {
+            color: #00a896;
+        }
         span {
             margin-right: 48px;
         }

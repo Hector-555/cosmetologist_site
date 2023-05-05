@@ -6,31 +6,70 @@ $green-blue: #00a896;
 .green-style {
     background-color: #55a630;
     color: #fff;
+    &:hover {
+        background-color: #b7ecb1;
+    }
+    &:active {
+        color: #55a630;
+    }
 }
 
 .purpure-style {
     background-color: #4340b4;
     color: #fff;
+    &:hover {
+        background-color: rgba(67, 64, 180, .7);
+    }
+    &:active {
+        color: #4340b4;
+    }
 }
 
 .green-blue-style {
     background-color: #00a896;
     color: #fff;
+    &:hover {
+        background-color: rgba(0, 168, 150, .65);
+    }
+    &:active {
+        color: #00a896;
+    }
 }
 
 .light-green-style {
     background-color: #ecf9eb;
     color: #55a630;
+    &:hover {
+        background-color: #b7ecb1;
+        color: #fff;
+    }
+    &:active {
+        color: #55a630;
+    }
 }
 
 .light-purpure-style {
     background-color: rgba(83, 81, 196, 0.1);
     color: #4340b4;
+    &:hover {
+        background-color: rgba(67, 64, 180, .7);
+        color: #fff;
+    }
+    &:active {
+        color: #4340b4;
+    }
 }
 
 .light-green-blue-style {
     background-color: rgba(0, 168, 150, 0.1);
     color: #00a896;
+    &:hover {
+        background-color: rgba(0, 168, 150, .65);
+        color: #fff;
+    }
+    &:active {
+        color: #00a896;
+    }
 }
 
 // Стили для зеленых точек в блоках с карточками
@@ -46,6 +85,12 @@ $green-blue: #00a896;
         border-radius: 50%;
         background-color: #b7ecb1;
         cursor: pointer;
+        &:hover {
+            background-color: #00a896;
+        }
+        &:active {
+            background-color: $green;
+        }
     }
     div &_active {
         background-color: $green;

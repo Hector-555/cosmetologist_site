@@ -29,6 +29,9 @@
         top: 285px;
         left: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_right-arrow {
         width: 16px;
@@ -37,5 +40,8 @@
         top: 285px;
         right: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }

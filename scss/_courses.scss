@@ -20,6 +20,9 @@
         top: 750px;
         left: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_right-arrow {
         width: 16px;
@@ -28,6 +31,9 @@
         top: 750px;
         right: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &-container {
         // После 1235px надо перестраивать - добавлять паддинги и уменьшать шрифт

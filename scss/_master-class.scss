@@ -22,6 +22,9 @@
         top: 375px;
         left: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_right-arrow {
         width: 16px;
@@ -30,6 +33,9 @@
         top: 375px;
         right: 75px;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_cards-container {
         width: 83.33%;
@@ -72,6 +78,10 @@
                 color: #fff;
                 border: none;
                 cursor: pointer;
+                z-index: 1;
+                &:hover {
+                    background-color: #b7ecb1;
+                  }
                 img {
                     width: 25px;
                     margin: auto;

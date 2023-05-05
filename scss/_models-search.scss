@@ -1,8 +1,8 @@
 .models-search {
     width: 83.33%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 177px;
 
     h2 {
@@ -29,11 +29,21 @@
         line-height: 26px;
         border: none;
         cursor: pointer;
-    }
-    img {
-        width: 34.58vw;
+        &:hover {
+            background-color: #b7ecb1;
+          }
+          &:active {
+            color:#55a630;
+          }
     }
     &_text-container {
         width: 43.68vw;
+        margin-right: 74px;
+    }
+    &_img-container {
+        width: 34.58vw;
+        img {
+            width: 100%;
+        }
     }
 }

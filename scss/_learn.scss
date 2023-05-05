@@ -13,6 +13,12 @@
         line-height: 38px;
         color: #fff;
         text-decoration: none;
+        &:hover {
+            color: #b7ecb1;
+        }
+        &:active {
+            color: #55a630;
+        }
     }
     p {
         font-weight: 500;
