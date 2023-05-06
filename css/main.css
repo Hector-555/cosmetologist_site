@@ -225,6 +225,7 @@ div .spots_active {
   background-size: auto auto;
   background-color: #ecffeb;
   min-height: 584px;
+  margin: 0 auto;
   position: relative;
 }
 .main-section_container {
@@ -317,6 +318,42 @@ h1 {
   line-height: 28px;
 }
 
+@media (max-width: 1000px) {
+  .main-section {
+    min-height: 489px;
+    background-position: right bottom;
+    background-size: 527px 430px;
+  }
+  .main-section_container {
+    width: 93%;
+    padding-top: 75px;
+  }
+  .main-section_short_description {
+    display: none;
+  }
+  .main-section_description {
+    line-height: 22px;
+    margin-bottom: 44px;
+  }
+  .main-section_btn {
+    width: 247px;
+    height: 55px;
+  }
+  .main-section_btn_left {
+    margin-right: 26px;
+  }
+  .achievements {
+    max-width: 854px;
+    min-height: 167px;
+  }
+  .achievements span {
+    font-size: 40px;
+  }
+  .achievements p {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
 .courses {
   background-color: #fff;
   background-image: url(../img/courses_bgr.png);

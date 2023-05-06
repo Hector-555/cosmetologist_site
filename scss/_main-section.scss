@@ -6,6 +6,7 @@
   background-size: auto auto;
   background-color: #ecffeb;
   min-height: 584px;
+  margin: 0 auto;
   position: relative;
 
   &_container {
@@ -97,5 +98,43 @@ h1 {
       font-weight: 400;
       font-size: 23px;
       line-height: 28px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .main-section {
+    min-height: 489px;
+    background-position: right bottom;
+    background-size: 527px 430px;
+    &_container {
+      width: 93%;
+      padding-top: 75px;
+    }
+    &_short_description {
+      display: none;
+    }
+    &_description {
+      line-height: 22px;
+      margin-bottom: 44px;
+    }
+    &_btn {
+      width: 247px;
+      height: 55px;
+      &_left {
+        margin-right: 26px;
+      }
+    }
+  }
+  .achievements {
+    max-width: 854px;
+    min-height: 167px;
+    span {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 21px;
+    }
   }
 }
