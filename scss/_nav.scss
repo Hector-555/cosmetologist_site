@@ -86,3 +86,47 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-tablet {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+    .nav-tablet {
+        min-height: 94px;
+        display: flex;
+        &_menu {
+            margin: 35px 39% 35px 23px;
+        }
+        button {
+            border: none;
+            background: none;
+        }
+        a {
+            text-decoration: none;
+            color: #303236;
+        }
+        &_logo {
+            margin-top: 9px;
+            margin-bottom: 9px;
+            margin-right: auto;
+        }
+        &_phone {
+            margin: 33px 21px 33px 0;
+            img {
+                width: 28px;
+                height: 28px;
+            }
+            span {
+                margin-left: 19px;
+                font-weight: 500;
+                font-size: 20px;
+                min-width: 26px;
+            }
+        }
+    }
+}

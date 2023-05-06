@@ -175,6 +175,48 @@ div .spots_active {
   align-items: center;
 }
 
+.nav-tablet {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+  .nav-tablet {
+    min-height: 94px;
+    display: flex;
+  }
+  .nav-tablet_menu {
+    margin: 35px 39% 35px 23px;
+  }
+  .nav-tablet button {
+    border: none;
+    background: none;
+  }
+  .nav-tablet a {
+    text-decoration: none;
+    color: #303236;
+  }
+  .nav-tablet_logo {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-right: auto;
+  }
+  .nav-tablet_phone {
+    margin: 33px 21px 33px 0;
+  }
+  .nav-tablet_phone img {
+    width: 28px;
+    height: 28px;
+  }
+  .nav-tablet_phone span {
+    margin-left: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    min-width: 26px;
+  }
+}
 .main-section {
   font-family: "Montserrat", sans-serif;
   background-image: url(../img/main-photo.png);
