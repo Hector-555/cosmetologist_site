@@ -99,6 +99,11 @@
     .nav-tablet {
         min-height: 94px;
         display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100vw;
+        background-color: #fff;
         &_menu {
             margin: 35px 39% 35px 23px;
         }

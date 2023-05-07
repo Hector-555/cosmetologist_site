@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.green {
+  color: #55a630;
+}
+
+.purpure {
+  color: #4340b4;
+}
+
+.green-blue {
+  color: #00a896;
+}
+
 .green-style {
   background-color: #55a630;
   color: #fff;
@@ -186,6 +198,11 @@ div .spots_active {
   .nav-tablet {
     min-height: 94px;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    background-color: #fff;
   }
   .nav-tablet_menu {
     margin: 35px 39% 35px 23px;
@@ -226,6 +243,7 @@ div .spots_active {
   background-color: #ecffeb;
   min-height: 584px;
   margin: 0 auto;
+  margin-top: 94px;
   position: relative;
 }
 .main-section_container {
@@ -576,8 +594,9 @@ h1 {
   margin-bottom: 177px;
 }
 .about_img-container {
-  margin-right: 10.08%;
-  width: 40.97vw;
+  width: 590px;
+  height: 666px;
+  margin-right: 8.33vw;
 }
 .about_img-container img {
   width: 100%;
@@ -592,6 +611,7 @@ h1 {
   margin-bottom: 30px;
 }
 .about h3 {
+  max-width: 452px;
   font-weight: 700;
   font-size: 35px;
   line-height: 37px;
@@ -601,11 +621,12 @@ h1 {
   color: #55a630;
 }
 .about-description {
+  max-width: 452px;
   margin-bottom: 60px;
 }
 .about_link {
   width: 265px;
-  margin-left: 226px;
+  float: right;
 }
 .about a {
   cursor: pointer;
@@ -625,9 +646,38 @@ h1 {
   width: 58px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1000px) {
+  .about {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 140px;
+  }
+  .about_img-container {
+    width: 383px;
+    height: 533px;
+    margin-right: 11vw;
+  }
+  .about_img-container img {
+    width: 383px;
+    height: 533px;
+  }
+  .about p, .about_link {
+    font-size: 20px;
+  }
+  .about p:nth-child(3) {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 467px;
+  }
+  .about h3 {
+    max-width: 459px;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
   .about_link {
-    margin-left: 160px;
+    float: right;
   }
 }
 .learn {
