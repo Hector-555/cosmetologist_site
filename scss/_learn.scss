@@ -1,5 +1,8 @@
 .learn {
     margin-bottom: 175px;
+    .bgr-1000 {
+        display: none;
+    }
     h2 {
         font-weight: 600;
         font-size: 35px;
@@ -13,6 +16,7 @@
         line-height: 38px;
         color: #fff;
         text-decoration: none;
+        text-transform: uppercase;
         &:hover {
             color: #b7ecb1;
         }
@@ -46,6 +50,7 @@
             background-image: url(../img/learn/courses-block-bgr.png);
             position: relative;
             div:first-child {
+                max-width: 327px;
                 margin: 35px 46px 61px 28px;
             }
             div:nth-child(3) {
@@ -110,8 +115,72 @@
     }
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1335px) {
     .learn a {
         font-size: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .learn {
+        background-color: none;
+        background-image: url(../img/learn-bgr-1000.png);
+        background-position: left bottom -175px;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0;
+        .bgr-1000 {
+            width: 100vw;
+            height: 175px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 55px;
+        }
+        p, img {
+            display: none;
+        }
+        &_top-block {
+            width: 100%;
+            gap: 28px;
+            margin-bottom: 29px;
+            > div {
+                width: 50%;
+                height: 207px;
+            }
+            > div:first-child {
+                div:first-child {
+                    max-width: 430px;
+                    margin: 153px 0 0 20px;
+                }
+            }
+            > div:last-child div {
+                max-width: 430px;
+                margin: 154px 0 0 20px;
+            }
+        }
+        &_bottom-block {
+            width: 100%;
+            gap: 30px;
+            margin-bottom: 0;
+            > div {
+                width: 33%;
+                height: 207px;
+            }
+            > div:first-child div {
+                margin-top: 157px;
+                margin-left: 20px;
+            }
+            > div:nth-child(2) div {
+                margin-top: 17px;
+                margin-left: 46px;
+            }
+            > div:nth-child(3) div {
+                margin-top: 160px;
+                margin-left: 45px;
+            }
+        }
     }
 }
