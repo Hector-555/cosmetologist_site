@@ -995,7 +995,7 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  gap: 153px;
   margin-bottom: 75px;
 }
 .master-class_cards-container > div {
@@ -1063,7 +1063,7 @@ h1 {
   line-height: 24px;
   margin-bottom: 10px;
 }
-.master-class_cards-description {
+.master-class_cards-text {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1075,6 +1075,48 @@ h1 {
   line-height: 26px;
 }
 
+@media (max-width: 1000px) {
+  .master-class {
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 140px;
+  }
+  .master-class h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .master-class p {
+    font-size: 20px;
+  }
+  .master-class_left-arrow, .master-class_right-arrow, .master-class_arrow-bold, .master-class_arrow-thin {
+    display: none;
+  }
+  .master-class_cards-container {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    margin-bottom: 45px;
+    gap: 30px;
+  }
+  .master-class_cards-container > div {
+    width: 46.5%;
+  }
+  .master-class_cards-date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .master-class_cards-text {
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  .master-class_cards-couch {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
 .why-us {
   margin-bottom: 166px;
 }

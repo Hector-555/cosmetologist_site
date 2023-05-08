@@ -42,7 +42,7 @@
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        gap: 153px;
         margin-bottom: 75px;
         > div {
             width: 43.33%;
@@ -110,7 +110,7 @@
         line-height: 24px;
         margin-bottom: 10px;
     }
-    &_cards-description {
+    &_cards-text {
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;
@@ -120,5 +120,48 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .master-class {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 140px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        &_left-arrow, &_right-arrow, &_arrow-bold, &_arrow-thin {
+            display: none;
+        }
+        &_cards-container {
+            width: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0;
+            margin-bottom: 45px;
+            gap: 30px;
+            > div {
+                width: 46.5%;
+            }
+        }
+        &_cards-date {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        &_cards-text {
+            line-height: 21px;
+            margin-bottom: 30px;
+        }
+        &_cards-couch {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+        }
     }
 }
