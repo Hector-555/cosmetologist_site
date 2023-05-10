@@ -28,7 +28,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: start;
-    border-bottom: 1px solid rgba(85, 166, 48, 0.5);
 
     &_contacts {
         width: 540px;
@@ -65,6 +64,16 @@
             }
         }
     }
+    &_flag {
+        position: relative;
+        margin-right: 25px;
+    }
+    &_flag::after {
+        content: url(../icons/nav-flag-arrow.png);
+        padding-left: 14px;
+        position: absolute;
+        top: 10px;
+    }
 }
 
 .link-logo {
@@ -75,6 +84,13 @@
         margin-top: 12px;
     width: 55%;
     }
+}
+
+.nav-spacer {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(85, 166, 48, 0.5);
 }
 
 .nav-down {

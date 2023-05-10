@@ -134,7 +134,6 @@ div .spots_active {
   margin: 0 auto;
   display: flex;
   justify-content: start;
-  border-bottom: 1px solid rgba(85, 166, 48, 0.5);
 }
 .nav-up_contacts {
   width: 540px;
@@ -168,6 +167,16 @@ div .spots_active {
 .nav-up_socials img:hover {
   transform: scale(1.1);
 }
+.nav-up_flag {
+  position: relative;
+  margin-right: 25px;
+}
+.nav-up_flag::after {
+  content: url(../icons/nav-flag-arrow.png);
+  padding-left: 14px;
+  position: absolute;
+  top: 10px;
+}
 
 .link-logo img:hover {
   transform: scale(1.05);
@@ -175,6 +184,13 @@ div .spots_active {
 .link-logo_container {
   margin-top: 12px;
   width: 55%;
+}
+
+.nav-spacer {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(85, 166, 48, 0.5);
 }
 
 .nav-down {
