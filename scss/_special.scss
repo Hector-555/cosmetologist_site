@@ -45,3 +45,23 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .special {
+        margin-bottom: 140px;
+        &_left-arrow, &_right-arrow {
+            display: none;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+        &_card-container {
+            width: 100vw;
+            max-width: 960px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -12,6 +12,21 @@
   color: #00a896;
 }
 
+.green-style-format {
+  background-color: #55a630;
+  color: #fff;
+}
+
+.purpure-style-format {
+  background-color: #4340b4;
+  color: #fff;
+}
+
+.green-blue-style-format {
+  background-color: #00a896;
+  color: #fff;
+}
+
 .green-style {
   background-color: #55a630;
   color: #fff;
@@ -828,8 +843,6 @@ h1 {
     background-position: left bottom -175px;
     background-repeat: no-repeat;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 0;
   }
   .learn .bgr-1000 {
@@ -851,7 +864,7 @@ h1 {
     margin-bottom: 29px;
   }
   .learn_top-block > div {
-    flex-grow: 1;
+    width: 47%;
     height: 207px;
   }
   .learn_top-block > div:first-child div:first-child {
@@ -869,7 +882,7 @@ h1 {
     margin-bottom: 0;
   }
   .learn_bottom-block > div {
-    flex-grow: 1;
+    width: 30%;
     height: 207px;
   }
   .learn_bottom-block > div:first-child div {
@@ -1088,12 +1101,13 @@ h1 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 21px;
 }
 .master-class_cards-couch {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 @media (max-width: 1000px) {
@@ -1300,6 +1314,25 @@ h1 {
   transform: scale(1.2);
 }
 
+@media (max-width: 1000px) {
+  .special {
+    margin-bottom: 140px;
+  }
+  .special_left-arrow, .special_right-arrow {
+    display: none;
+  }
+  .special h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .special_card-container {
+    width: 100vw;
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+  }
+}
 .form {
   width: 83.33%;
   max-width: 1200px;
