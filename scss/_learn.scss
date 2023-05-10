@@ -145,10 +145,11 @@
         }
         &_top-block {
             width: 100%;
+            max-width: 960px;
             gap: 28px;
             margin-bottom: 29px;
             > div {
-                width: 50%;
+                flex-grow: 1;
                 height: 207px;
             }
             > div:first-child {
@@ -164,10 +165,11 @@
         }
         &_bottom-block {
             width: 100%;
+            max-width: 960px;
             gap: 30px;
             margin-bottom: 0;
             > div {
-                width: 33%;
+                flex-grow: 1;
                 height: 207px;
             }
             > div:first-child div {

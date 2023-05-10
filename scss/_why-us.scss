@@ -7,7 +7,7 @@
         margin-bottom: 75px;
         text-align: center;
     }
-    h4 {
+    h3 {
         font-weight: 600;
         font-size: 25px;
         line-height: 26px;
@@ -26,7 +26,7 @@
         gap: 2.42%;
         div {
             position: relative;
-            width: 31.67%;
+            width: 30%;
             box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
             span {
                 font-family: 'Raleway', sans-serif;
@@ -65,4 +65,51 @@
             }
         }
     }
+}
+
+@media (max-width: 1000px) {
+    .why-us {
+        margin-bottom: 140px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 13px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 17px;
+        }
+        span {
+            display: none;
+        }
+        &_card-container {
+            width: 100vw;
+            max-width: 960px;
+            padding-left: 20px;
+            padding-right: 20px;
+            gap: 28px;
+            div:nth-child(1) {
+                padding: 45px 6px 11px 24px;
+                background-image: url(../img/why-us/card-bgr-01.png);
+                background-repeat: no-repeat;
+                background-position: bottom 11px right 30px;
+            }
+            div:nth-child(2) {
+                padding: 45px 16px 64px 25px;
+                background-image: url(../img/why-us/card-bgr-02.png);
+                background-repeat: no-repeat;
+                background-position: bottom 95px right 30px;
+            }
+            div:nth-child(3) {
+                padding: 25px 7px 2px 25px;
+                background-image: url(../img/why-us/card-bgr-03.png);
+                background-repeat: no-repeat;
+                background-position: bottom 0px right 40px;
+            }
+        }
+    }
+    
 }

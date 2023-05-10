@@ -132,7 +132,6 @@
     }
 }
 
-
 @media (max-width: 1000px) {
     .courses {
         margin-bottom: 140px;
@@ -145,6 +144,7 @@
             margin-bottom: 75px;
         }
         &-container {
+            max-width: 960px;
             margin-left: 20px;
             margin-right: 20px;
             gap: 2.6%;
