@@ -1395,6 +1395,25 @@ h1 {
   color: #55a630;
 }
 
+@media (max-width: 1000px) {
+  .form {
+    width: 100vw;
+    max-width: 960px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 140px;
+  }
+  .form h3 {
+    padding-top: 65px;
+    margin-bottom: 25px;
+  }
+  .form p {
+    font-size: 20px;
+    width: 463px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
 .footer {
   max-width: 1440px;
   margin: 0 auto;

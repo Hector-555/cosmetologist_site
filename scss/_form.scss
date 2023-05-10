@@ -59,3 +59,23 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .form {
+        width: 100vw;
+        max-width: 960px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 140px;
+        h3 {
+            padding-top: 65px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 20px;
+            width: 463px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
+}
