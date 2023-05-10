@@ -1421,6 +1421,14 @@ h1 {
 }
 .footer_map {
   width: 52.5%;
+  position: relative;
+}
+.footer_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .footer_info {
   width: 47.5%;
@@ -1521,6 +1529,62 @@ h1 {
   color: #55a630;
 }
 
+@media (max-width: 1000px) {
+  .footer {
+    height: 601px;
+  }
+  .footer_map {
+    width: 50%;
+  }
+  .footer_info {
+    width: 50%;
+    padding-left: 55px;
+  }
+  .footer_contacts {
+    margin-bottom: 31px;
+  }
+  .footer_contacts a:first-child {
+    padding-top: 31px;
+    margin-bottom: 33px;
+  }
+  .footer_contacts a:nth-child(2) {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer_contacts a:nth-child(3) {
+    font-size: 20px;
+  }
+  .footer_contacts img {
+    width: 77px;
+    height: 77px;
+  }
+  .footer-links {
+    font-size: 15px;
+    line-height: 14px;
+    margin-bottom: 47px;
+  }
+  .footer-links_left-block {
+    gap: 15px;
+    margin-right: 121px;
+  }
+  .footer-links_right-block {
+    gap: 18px;
+  }
+  .footer-links_socials {
+    gap: 32px;
+    margin-bottom: 61px;
+  }
+  .footer-links_socials img {
+    width: 32px;
+    height: 33px;
+  }
+  .footer-links_confidential {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
