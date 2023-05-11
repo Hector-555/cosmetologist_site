@@ -151,3 +151,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .nav-tablet {
+        &_menu {
+            margin: 35px 25% 35px 27px;
+        }
+        &_logo {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &_phone {
+            width: 196px;
+            margin: 35px 23px 35px auto;
+            img {
+                width: 23px;
+                height: 23px;
+            }
+            span {
+                margin-left: 18px;
+                font-size: 19px;
+            }
+        }
+    }
+}
