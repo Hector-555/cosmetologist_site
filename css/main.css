@@ -120,6 +120,16 @@ div .spots_active {
   background-color: #55a630;
 }
 
+@media (max-width: 768px) {
+  .spots {
+    width: 70px;
+    height: 7.5px;
+  }
+  .spots div {
+    width: 7.5px;
+    height: 7.5px;
+  }
+}
 .nav {
   background-color: #fff;
   font-weight: 500;
@@ -488,6 +498,9 @@ h1 {
   margin-bottom: 77px;
   text-align: center;
 }
+.courses-title_768px {
+  display: none;
+}
 .courses_left-arrow {
   width: 16px;
   height: 24px;
@@ -546,6 +559,7 @@ h1 {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 22px;
+  word-break: break-all;
 }
 .courses_card_title_tablet {
   display: none;
@@ -573,12 +587,20 @@ h1 {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   line-height: 12px;
-  border-left: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 60px;
   padding-left: 10px;
+}
+.courses_card_about_purpure {
+  border-left: 1px solid #4340b4;
+}
+.courses_card_about_green {
+  border-left: 1px solid #55a630;
+}
+.courses_card_about_green-blue {
+  border-left: 1px solid #00a896;
 }
 .courses_card_free {
   font-weight: 400;
@@ -610,7 +632,7 @@ h1 {
   .courses_left-arrow, .courses_right-arrow {
     display: none;
   }
-  .courses_title {
+  .courses-title {
     padding-top: 292px;
     font-size: 30px;
     margin-bottom: 75px;
@@ -650,6 +672,7 @@ h1 {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 26px;
+    word-break: break-all;
   }
   .courses_card_format {
     width: 141px;
@@ -684,6 +707,110 @@ h1 {
     height: 49px;
     font-weight: 600;
     font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .courses {
+    margin-bottom: 100px;
+    background-position: right -4% top 23%;
+    background-size: 564px 419px;
+  }
+  .courses_left-arrow, .courses_right-arrow {
+    display: block;
+    width: 11px;
+    height: 17px;
+  }
+  .courses_left-arrow {
+    top: 435px;
+    left: 37px;
+  }
+  .courses_right-arrow {
+    top: 435px;
+    right: 37px;
+  }
+  .courses-title {
+    display: none;
+  }
+  .courses-title_768px {
+    display: block;
+    padding-top: 228px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .courses-container {
+    max-width: 768px;
+    margin-left: 8.2%;
+    margin-right: 8.2%;
+    margin-bottom: 30px;
+    gap: 2.47%;
+  }
+  .courses_card {
+    margin-bottom: 0;
+  }
+  .courses_card_description {
+    font-size: 10px;
+  }
+  .courses_card_bird {
+    right: 12px;
+    top: 7px;
+    width: 24px;
+    height: 16px;
+  }
+  .courses_card_bird img {
+    width: 100%;
+  }
+  .courses_card_title {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 7px;
+  }
+  .courses_card_title_desktop {
+    display: none;
+  }
+  .courses_card_title_tablet {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 7px;
+  }
+  .courses_card_format {
+    width: 90px;
+    height: 19px;
+    margin-bottom: 11px;
+    font-size: 10px;
+    line-height: 19px;
+  }
+  .courses_card_date {
+    font-size: 13px;
+    margin-bottom: 17px;
+  }
+  .courses_card_about {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 8px;
+    margin-bottom: 31px;
+    width: 90px;
+    height: 55px;
+  }
+  .courses_card_img {
+    width: 74px;
+    height: 85px;
+    top: 120px;
+    right: 12px;
+  }
+  .courses_card_img img {
+    width: 100%;
+  }
+  .courses_card_free {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  .courses_card_btn {
+    height: 30px;
+    font-size: 11px;
   }
 }
 .about {

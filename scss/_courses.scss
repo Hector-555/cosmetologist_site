@@ -12,6 +12,9 @@
         padding-top: 363px;
         margin-bottom: 77px;
         text-align: center;
+        &_768px {
+            display: none;
+        }
     }
     &_left-arrow {
         width: 16px;
@@ -73,6 +76,7 @@
             font-size: 30px;
             line-height: 30px;
             margin-bottom: 22px;
+            word-break: break-all;
         }
         &_title_tablet {
             display: none;
@@ -100,12 +104,20 @@
             font-family: 'Raleway', sans-serif;
             font-size: 15px;
             line-height: 12px;
-            border-left: 1px solid black;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             margin-bottom: 60px;
             padding-left: 10px;
+            &_purpure {
+                border-left: 1px solid #4340b4;
+            }
+            &_green {
+                border-left: 1px solid #55a630;
+            }
+            &_green-blue {
+                border-left: 1px solid #00a896;
+            }
         }
         &_free {
             font-weight: 400;
@@ -138,7 +150,7 @@
         &_left-arrow, &_right-arrow {
             display: none;
         }
-        &_title {
+        &-title {
             padding-top: 292px;
             font-size: 30px;
             margin-bottom: 75px;
@@ -179,6 +191,7 @@
                 font-size: 25px;
                 line-height: 25px;
                 margin-bottom: 26px;
+                word-break: break-all;
             }
             &_format {
                 width: 141px;
@@ -213,6 +226,111 @@
                 height: 49px;
                 font-weight: 600;
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .courses {
+        margin-bottom: 100px;
+        background-position: right -4% top 23%;
+        background-size: 564px 419px;
+        &_left-arrow, &_right-arrow {
+            display: block;
+            width: 11px;
+            height: 17px;
+        }
+        &_left-arrow {
+            top: 435px;
+            left: 37px;
+        }
+        &_right-arrow {
+            top: 435px;
+            right: 37px;
+        }
+        &-title {
+            display: none;
+            &_768px {
+                display: block;
+                padding-top: 228px;
+                margin-bottom: 25px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        &-container {
+            max-width: 768px;
+            margin-left: 8.2%;
+            margin-right: 8.2%;
+            margin-bottom: 30px;
+            gap: 2.47%;
+        }
+        &_card {
+            margin-bottom: 0;
+            &_description {
+                font-size: 10px;
+            }
+            &_bird {
+                right: 12px;
+                top: 7px;
+                width: 24px;
+                height: 16px;
+                img {
+                    width: 100%;
+                }
+            }
+            &_title {
+                font-size: 17px;
+                line-height: 17px;
+                margin-bottom: 7px;
+            }
+            &_title_desktop {
+                display: none;
+            }
+            &_title_tablet {
+                font-size: 17px;
+                line-height: 17px;
+                margin-bottom: 7px;
+            }
+            &_format {
+                width: 90px;
+                height: 19px;
+                margin-bottom: 11px;
+                font-size: 10px;
+                line-height: 19px;
+            }
+            &_date {
+                font-size: 13px;
+                margin-bottom: 17px;
+            }
+            &_about {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 8px;
+                margin-bottom: 31px;
+                width: 90px;
+                height: 55px;
+            }
+            &_img {
+                width: 74px;
+                height: 85px;
+                top: 120px;
+                right: 12px;
+                img {
+                    width: 100%;
+                }
+            }
+            &_free {
+                font-size: 9px;
+                margin-bottom: 4px;
+            }
+            &_btn {
+                height: 30px;
+                font-size: 11px;
             }
         }
     }

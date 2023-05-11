@@ -123,3 +123,14 @@ $green-blue: #00a896;
         background-color: $green;
     }
 }
+
+@media (max-width: 768px) {
+    .spots {
+        width: 70px;
+        height: 7.5px;
+        div {
+            width: 7.5px;
+            height: 7.5px;
+        }
+    }
+}
