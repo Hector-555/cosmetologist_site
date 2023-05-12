@@ -115,11 +115,32 @@
     }
 }
 
+// Промежуточный адаптив (1440px - 1000px)
+
 @media (max-width: 1335px) {
     .learn a {
         font-size: 25px;
     }
+    .learn_top-block > div:first-child > div:nth-child(3) {
+        right: 80px;
+    }
 }
+
+@media (max-width: 1165px) {
+    .learn_top-block {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .learn a {
+        letter-spacing: -2px;
+    }
+}
+
+// ---------------------------------------
 
 @media (max-width: 1000px) {
     .learn {

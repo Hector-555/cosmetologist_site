@@ -16,31 +16,7 @@
             display: none;
         }
     }
-    &_left-arrow {
-        width: 16px;
-        height: 24px;
-        position: absolute;
-        top: 750px;
-        left: 75px;
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    &_right-arrow {
-        width: 16px;
-        height: 24px;
-        position: absolute;
-        top: 750px;
-        right: 75px;
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
     &-container {
-        // После 1235px надо перестраивать - добавлять паддинги и уменьшать шрифт
-
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -48,6 +24,31 @@
         gap: 5%;
         margin: 0 auto;
         margin-bottom: 75px;
+        position: relative;
+        &:before {
+            content: url(../icons/left-arrow.png);
+            position: absolute;
+            left: -3%;
+            top: 44%;
+            width: 16px;
+            height: 24px;
+            cursor: pointer;
+        }
+        &:hover:before {
+            transform: scale(1.3);
+        }
+        &:after {
+            content: url(../icons/right-arrow.png);
+            position: absolute;
+            right: -3%;
+            top: 44%;
+            width: 16px;
+            height: 24px;
+            cursor: pointer;
+        }
+        &:hover:after {
+            transform: scale(1.3);
+        }
     }
     &_card {
         width: 30%;
@@ -143,6 +144,36 @@
         }
     }
 }
+
+// Промежуточный адаптив (1440px - 1000px)
+
+@media (max-width: 1275px) {
+    .courses-container {
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .courses_card_title_desktop {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .courses_card_title_desktop {
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .courses_card_title_desktop {
+        letter-spacing: -3.3px;
+    }
+}
+
+// ---------------------------------------
 
 @media (max-width: 1000px) {
     .courses {
