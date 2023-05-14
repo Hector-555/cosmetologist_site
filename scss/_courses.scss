@@ -262,6 +262,68 @@
     }
 }
 
+// Промежуточный адаптив (1000px - 768px)
+
+@media (max-width: 955px) {
+    .courses_card_title_tablet {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 915px) {
+    .courses_card {
+        &_title_tablet {
+            letter-spacing: -2px;
+        }
+        &_img {
+            width: 100px;
+            right: 2px;
+            top: 210px;
+        }
+    }
+}
+
+@media (max-width: 865px) {
+    .courses_card {
+        &_title_tablet {
+            letter-spacing: -3.3px;
+        }
+        &_img {
+            width: 90px;
+            right: -1px;
+            top: 220px;
+        }
+    }
+}
+
+@media (max-width: 825px) {
+    .courses_card {
+        &_img {
+            width: 85px;
+            right: -6px;
+            top: 225px;
+        }
+    }
+    .green-blue {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 790px) {
+    .courses_card {
+        &_img {
+            width: 80px;
+            right: -8px;
+            top: 230px;
+        }
+        &_title_tablet {
+            font-size: 24px;
+        }
+    }
+}
+
+// ---------------------------------------
+
 @media (max-width: 768px) {
     .courses {
         margin-bottom: 100px;
