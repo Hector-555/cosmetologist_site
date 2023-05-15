@@ -128,3 +128,42 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .models-search {
+        min-height: 280px;
+        max-width: 642px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding: 0;
+        &_text-container {
+            width: 44.92vw;
+            margin-right: auto;
+            h2 {
+                padding-top: 0;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: -0.4px;
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 35px;
+            }
+            button {
+                width: 201px;
+                height: 40px;
+                font-size: 15px;
+            }
+        }
+        &_img-container {
+            width: 276px;
+            height: 279px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
