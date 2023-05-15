@@ -1274,6 +1274,61 @@ h1 {
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  .learn {
+    max-width: 642px;
+    min-height: 395px;
+    padding-left: 62px;
+    padding-right: 62px;
+    margin-bottom: 101px;
+  }
+  .learn .bgr-1000 {
+    display: none;
+  }
+  .learn h2 {
+    font-size: 25px;
+  }
+  .learn a {
+    line-height: 25px;
+  }
+  .learn_top-block {
+    height: 148px;
+    gap: 2.73vw;
+    margin-bottom: 21px;
+  }
+  .learn_top-block > div {
+    height: 100%;
+  }
+  .learn_top-block > div:first-child div:first-child {
+    margin-left: 15px;
+    margin-top: 74px;
+    max-width: 192px;
+  }
+  .learn_top-block > div:last-child div {
+    margin-left: 15px;
+    margin-top: 74px;
+    max-width: 147px;
+  }
+  .learn_bottom-block {
+    height: 147px;
+    gap: 2.6vw;
+  }
+  .learn_bottom-block > div {
+    height: 100%;
+  }
+  .learn_bottom-block > div:first-child div {
+    margin-left: 1px;
+    margin-top: 97px;
+  }
+  .learn_bottom-block > div:nth-child(2) div {
+    margin-left: 22px;
+    margin-top: 102px;
+  }
+  .learn_bottom-block > div:nth-child(3) div {
+    margin-left: 59px;
+    margin-top: 102px;
+  }
+}
 .models-search {
   width: 83.33%;
   max-width: 1200px;
