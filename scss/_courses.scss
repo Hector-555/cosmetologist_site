@@ -360,6 +360,9 @@
             margin-right: 8.2%;
             margin-bottom: 30px;
             gap: 2.47%;
+            &:before, &:after {
+                display: block;
+            }
         }
         &_card {
             margin-bottom: 0;

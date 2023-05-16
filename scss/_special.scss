@@ -70,3 +70,37 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .special {
+        max-width: 642px;
+        margin: 0 auto;
+        height: 322px;
+        margin-bottom: 101px;
+        h2 {
+            font-size: 25px;
+        }
+        &_card-container {
+            padding: 0;
+            width: 100%;
+            gap: 20px;
+            div {
+                width: 26.04vw;
+                img {
+                    width: 100%;
+                }
+            }
+            &:before, &:after {
+                display: block;
+            }
+            &:before {
+                left: -4%;
+                top: 51%;
+            }
+            &:after {
+                right: -4%;
+                top: 51%;
+            }
+        }
+    }
+}

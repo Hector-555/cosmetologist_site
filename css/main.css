@@ -815,6 +815,9 @@ h1 {
     margin-bottom: 30px;
     gap: 2.47%;
   }
+  .courses-container:before, .courses-container:after {
+    display: block;
+  }
   .courses_card {
     margin-bottom: 0;
   }
@@ -1721,6 +1724,12 @@ h1 {
   .master-class_cards-container > img {
     height: 149px;
   }
+  .master-class_cards-container:before, .master-class_cards-container:after {
+    display: block;
+  }
+  .master-class_cards-container:before {
+    left: -5.5%;
+  }
   .master-class_cards-description div:first-child {
     max-height: 154px;
     padding-top: 6px;
@@ -1990,6 +1999,39 @@ h1 {
   }
   .special_card-container:before, .special_card-container:after {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .special {
+    max-width: 642px;
+    margin: 0 auto;
+    height: 322px;
+    margin-bottom: 101px;
+  }
+  .special h2 {
+    font-size: 25px;
+  }
+  .special_card-container {
+    padding: 0;
+    width: 100%;
+    gap: 20px;
+  }
+  .special_card-container div {
+    width: 26.04vw;
+  }
+  .special_card-container div img {
+    width: 100%;
+  }
+  .special_card-container:before, .special_card-container:after {
+    display: block;
+  }
+  .special_card-container:before {
+    left: -4%;
+    top: 51%;
+  }
+  .special_card-container:after {
+    right: -4%;
+    top: 51%;
   }
 }
 .form {
