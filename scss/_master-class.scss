@@ -67,29 +67,52 @@
             width: 29.42%;
             display: flex;
             flex-direction: column;
-            p {
-                min-height: 132px;
-                text-align: center;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 132px;
-                background-color: #ecf9eb;
+            // p {
+            //     min-height: 132px;
+            //     text-align: center;
+            //     font-weight: 600;
+            //     font-size: 20px;
+            //     line-height: 132px;
+            //     background-color: #ecf9eb;
+            // }
+            // button {
+            //     min-height: 98px;
+            //     background-color: $green;
+            //     color: #fff;
+            //     border: none;
+            //     cursor: pointer;
+            //     z-index: 1;
+            //     &:hover {
+            //         background-color: #b7ecb1;
+            //       }
+            //     img {
+            //         width: 25px;
+            //         margin: auto;
+            //     }
+            // }
+        }
+    }
+    &_cards-price {
+        // min-height: 132px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 132px;
+        background-color: #ecf9eb;
+    }
+    &_cards-btn {
+        height: 98px;
+        background-color: $green;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+        &:hover {
+            background-color: #b7ecb1;
             }
-            button {
-                min-height: 98px;
-                background-color: $green;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-                z-index: 1;
-                &:hover {
-                    background-color: #b7ecb1;
-                  }
-                img {
-                    width: 25px;
-                    margin: auto;
-                }
-            }
+        img {
+            width: 25px;
+            margin: auto;
         }
     }
     &_arrow-bold {
@@ -142,12 +165,8 @@
     .master-class_arrow-thin {
         right: 7%;
     }
-    .master-class_cards-description {
-        div:nth-child(2) {
-            p {
-                letter-spacing: -1px;
-            }
-        }
+    .master-class_cards-price {
+        letter-spacing: -1px;
     }
 }
 
@@ -163,7 +182,7 @@
             font-size: 30px;
             margin-bottom: 40px;
         }
-        p {
+        > p {
             font-size: 20px;
         }
         &_arrow-bold, &_arrow-thin {
@@ -196,12 +215,8 @@
             font-weight: 400;
             font-size: 15px;
         }
-        &_cards-description {
-            div:nth-child(2) {
-                p {
-                    letter-spacing: normal;
-                }
-            }
+        &_cards-price {
+            letter-spacing: normal;
         }
     }
 }
@@ -220,25 +235,82 @@
 }
 
 @media (max-width: 870px) {
-    .master-class_cards-description {
-        p:nth-child(3) {
-            font-size: 17px;
-            letter-spacing: -1px;
-        }
+    .master-class_cards-couch {
+        font-size: 17px;
+        letter-spacing: -1px;
     }
 }
 
 @media (max-width: 850px) {
-    .master-class_cards-description {
-        p:nth-child(2) {
-            font-size: 17px;
-        }
-        div:nth-child(2) {
-            p {
-                letter-spacing: -1px;
-            }
-        }
+    .master-class_cards-price {
+        letter-spacing: -1px;
+    }
+    .master-class_cards-text {
+        font-size: 17px;
     }
 }
 
 // ---------------------------------------
+
+@media (max-width: 768px) {
+    .master-class {
+        min-height: 280px;
+        max-width: 642px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding: 0;
+        h2 {
+            font-size: 25px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        > p {
+            font-size: 15px;
+            line-height: 11px;
+            margin-bottom: 50px;
+        }
+        &_cards-container {
+            padding: 0;
+            margin-bottom: 24px;
+            gap: 20px;
+            > img {
+                height: 149px;
+            }
+        }
+        &_cards-description {
+            div:first-child {
+                max-height: 154px;
+                padding-top: 6px;
+                padding-left: 2.21vw;
+            }
+            div:nth-child(2) {
+                width: 11.72vw;
+            }
+        }
+        &_cards-date {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        &_cards-text {
+            font-size: 15px;
+            line-height: 16px;
+            margin-bottom: 12px;
+        }
+        &_cards-couch {
+            letter-spacing: normal;
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 13px;
+        }
+        &_cards-price {
+            letter-spacing: normal;
+            font-size: 12px;
+            line-height: 89px;
+            max-height: 89px;
+        }
+        &_cards-btn {
+            height: 66px;
+        }
+    }
+}

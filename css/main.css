@@ -1553,26 +1553,25 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.master-class_cards-description div:nth-child(2) p {
-  min-height: 132px;
+.master-class_cards-price {
   text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 132px;
   background-color: #ecf9eb;
 }
-.master-class_cards-description div:nth-child(2) button {
-  min-height: 98px;
+.master-class_cards-btn {
+  height: 98px;
   background-color: #55a630;
   color: #fff;
   border: none;
   cursor: pointer;
   z-index: 1;
 }
-.master-class_cards-description div:nth-child(2) button:hover {
+.master-class_cards-btn:hover {
   background-color: #b7ecb1;
 }
-.master-class_cards-description div:nth-child(2) button img {
+.master-class_cards-btn img {
   width: 25px;
   margin: auto;
 }
@@ -1622,7 +1621,7 @@ h1 {
   .master-class_arrow-thin {
     right: 7%;
   }
-  .master-class_cards-description div:nth-child(2) p {
+  .master-class_cards-price {
     letter-spacing: -1px;
   }
 }
@@ -1637,7 +1636,7 @@ h1 {
     font-size: 30px;
     margin-bottom: 40px;
   }
-  .master-class p {
+  .master-class > p {
     font-size: 20px;
   }
   .master-class_arrow-bold, .master-class_arrow-thin {
@@ -1670,7 +1669,7 @@ h1 {
     font-weight: 400;
     font-size: 15px;
   }
-  .master-class_cards-description div:nth-child(2) p {
+  .master-class_cards-price {
     letter-spacing: normal;
   }
 }
@@ -1683,17 +1682,77 @@ h1 {
   }
 }
 @media (max-width: 870px) {
-  .master-class_cards-description p:nth-child(3) {
+  .master-class_cards-couch {
     font-size: 17px;
     letter-spacing: -1px;
   }
 }
 @media (max-width: 850px) {
-  .master-class_cards-description p:nth-child(2) {
+  .master-class_cards-price {
+    letter-spacing: -1px;
+  }
+  .master-class_cards-text {
     font-size: 17px;
   }
-  .master-class_cards-description div:nth-child(2) p {
-    letter-spacing: -1px;
+}
+@media (max-width: 768px) {
+  .master-class {
+    min-height: 280px;
+    max-width: 642px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+  .master-class h2 {
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .master-class > p {
+    font-size: 15px;
+    line-height: 11px;
+    margin-bottom: 50px;
+  }
+  .master-class_cards-container {
+    padding: 0;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+  .master-class_cards-container > img {
+    height: 149px;
+  }
+  .master-class_cards-description div:first-child {
+    max-height: 154px;
+    padding-top: 6px;
+    padding-left: 2.21vw;
+  }
+  .master-class_cards-description div:nth-child(2) {
+    width: 11.72vw;
+  }
+  .master-class_cards-date {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .master-class_cards-text {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+  .master-class_cards-couch {
+    letter-spacing: normal;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 13px;
+  }
+  .master-class_cards-price {
+    letter-spacing: normal;
+    font-size: 12px;
+    line-height: 89px;
+    max-height: 89px;
+  }
+  .master-class_cards-btn {
+    height: 66px;
   }
 }
 .why-us {
