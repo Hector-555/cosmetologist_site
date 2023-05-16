@@ -2325,6 +2325,39 @@ h1 {
     margin-bottom: 43px;
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    height: 591px;
+  }
+  .footer_map {
+    width: 46.35%;
+  }
+  .footer_info {
+    width: 53.65%;
+    padding-left: 30px;
+  }
+  .footer_contacts {
+    margin-bottom: 26px;
+  }
+  .footer_contacts a:first-child {
+    padding-top: 40px;
+  }
+  .footer_contacts a:nth-child(2) {
+    margin-bottom: 21px;
+  }
+  .footer-links_socials {
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .footer-links_socials img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-links_confidential {
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;

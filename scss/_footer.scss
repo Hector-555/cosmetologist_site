@@ -168,5 +168,38 @@
             }
         }
     }
-    
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 591px;
+        &_map {
+            width: 46.35%;
+        }
+        &_info {
+            width: 53.65%;
+            padding-left: 30px;
+        }
+        &_contacts {
+            margin-bottom: 26px;
+            a:first-child {
+                padding-top: 40px;
+            }
+            a:nth-child(2) {
+                margin-bottom: 21px;
+            }
+        }
+        &-links_socials {
+            gap: 24px;
+            margin-bottom: 64px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &-links_confidential {
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+    }
 }
