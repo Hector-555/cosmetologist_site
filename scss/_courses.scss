@@ -467,3 +467,24 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+ .courses {
+    margin-bottom: 80px;
+    &-title_768px {
+        margin-bottom: 40px;
+    }
+    &-container {
+        margin-bottom: 40px;
+    }
+    &_card_description {
+        margin-bottom: 2px;
+    }
+    &_card_title, &_card_title_tablet {
+        letter-spacing: -0.4px;
+    }
+    &_card_date {
+        margin-bottom: 25px;
+    }
+ }
+}

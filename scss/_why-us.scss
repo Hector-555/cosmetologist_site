@@ -185,3 +185,36 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .why-us {
+        h2 {
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+    }
+    .why-us_card-container > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 94px;
+        padding-top: 35px;
+    }
+    .why-us_card-container {
+        > div {
+            height: 220px;
+        }
+        > div:nth-child(1) {
+            background-position: bottom 40px left 10px;
+        }
+        > div:nth-child(2) {
+            background-position: bottom 40px left 5px;
+        }
+        > div:nth-child(3) {
+            background-position: bottom 45px left 5px;
+        }
+    }
+}

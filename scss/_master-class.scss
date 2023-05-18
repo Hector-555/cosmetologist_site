@@ -315,6 +315,17 @@
             flex-direction: column;
             align-items: center;
             gap: 31px;
+            > div {
+                width: 311px;
+            }
+        }
+        &_cards-description {
+            div:nth-child(1){
+                width: 221px;
+            }
+            div:nth-child(2){
+                width: 90px;
+            }
         }
     }
     .display_none {
@@ -323,3 +334,18 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .master-class {
+        h2 {
+            font-size: 20px;
+            line-height: 17px;
+            margin-bottom: 15px;
+        }
+        > p {
+            margin: 0 auto;
+            margin-bottom: 40px;
+            width: 249px;
+        }
+    }
+}

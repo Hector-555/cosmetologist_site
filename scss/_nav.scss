@@ -214,8 +214,8 @@
            margin-right: -50px;
            margin-top: 40px;
            img {
-               width: 15px;
-               height: 15px;
+               width: 14px;
+               height: 14px;
            }
            span {
                margin-left: 9px;
@@ -226,3 +226,22 @@
    }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .nav-tablet {
+        height: 59px;
+        &_menu {
+            width: 50px;
+            img {
+                width: 100%;
+            }
+        }
+        &_phone {
+            margin-top: auto;
+            margin-right: -50px;
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}

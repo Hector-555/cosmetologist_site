@@ -199,3 +199,49 @@ h1 {
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+  .main-section {
+    padding-left: 60px;
+    padding-top: 20px;
+    background-position: right 5.2% bottom;
+    background-size: 226px 192px;
+    min-height: 249px;
+    h1 {
+      font-size: 24px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+    &_container {
+      margin-left: 0;
+      padding-top: 0;
+    }
+    &_short_description {
+      display: block;
+      font-size: 8px;
+      line-height: 26px;
+      padding-top: 0;
+      margin-bottom: 2px;
+    }
+    &_description {
+      font-size: 8px;
+      line-height: 10px;
+      margin-bottom: 13px;
+      max-width: 167px;
+    }
+    &_btn {
+      width: 141px;
+      height: 30px;
+      font-size: 8px;
+      &_left {
+        margin-bottom: 8px;
+      }
+      &_right {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  .achievements {
+    bottom: -95px;
+  }
+}

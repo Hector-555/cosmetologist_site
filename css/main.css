@@ -325,12 +325,30 @@ div .spots_active {
     margin-top: 40px;
   }
   .nav-tablet_phone img {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
   }
   .nav-tablet_phone span {
     margin-left: 9px;
     font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-tablet {
+    height: 59px;
+  }
+  .nav-tablet_menu {
+    width: 50px;
+  }
+  .nav-tablet_menu img {
+    width: 100%;
+  }
+  .nav-tablet_phone {
+    margin-top: auto;
+    margin-right: -50px;
+  }
+  .nav-tablet_phone span {
+    font-size: 12px;
   }
 }
 .main-section {
@@ -523,6 +541,51 @@ h1 {
   .main-section {
     background-position: right bottom;
     background-size: 300px 250px;
+  }
+}
+@media (max-width: 480px) {
+  .main-section {
+    padding-left: 60px;
+    padding-top: 20px;
+    background-position: right 5.2% bottom;
+    background-size: 226px 192px;
+    min-height: 249px;
+  }
+  .main-section h1 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .main-section_container {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .main-section_short_description {
+    display: block;
+    font-size: 8px;
+    line-height: 26px;
+    padding-top: 0;
+    margin-bottom: 2px;
+  }
+  .main-section_description {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 13px;
+    max-width: 167px;
+  }
+  .main-section_btn {
+    width: 141px;
+    height: 30px;
+    font-size: 8px;
+  }
+  .main-section_btn_left {
+    margin-bottom: 8px;
+  }
+  .main-section_btn_right {
+    margin-bottom: 35px;
+  }
+  .achievements {
+    bottom: -95px;
   }
 }
 .courses {
@@ -955,6 +1018,26 @@ h1 {
     background-color: hsl(0, 0%, 90%);
   }
 }
+@media (max-width: 480px) {
+  .courses {
+    margin-bottom: 80px;
+  }
+  .courses-title_768px {
+    margin-bottom: 40px;
+  }
+  .courses-container {
+    margin-bottom: 40px;
+  }
+  .courses_card_description {
+    margin-bottom: 2px;
+  }
+  .courses_card_title, .courses_card_title_tablet {
+    letter-spacing: -0.4px;
+  }
+  .courses_card_date {
+    margin-bottom: 25px;
+  }
+}
 .about {
   background-color: #fff;
   width: 83.33vw;
@@ -1172,6 +1255,32 @@ h1 {
   .about_link_mobile {
     margin-right: 14px;
     color: #55a630;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    width: 75.8vw;
+    margin: 0 auto;
+    margin-bottom: 81px;
+  }
+  .about_img-container {
+    width: 75.8vw;
+  }
+  .about-about {
+    margin-bottom: 15px;
+  }
+  .about_text h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .about_text h3 span:after {
+    content: " - ";
+  }
+  .about p:nth-child(3) {
+    margin-bottom: 40px;
+  }
+  .about_link_tablet {
+    font-size: 14px;
   }
 }
 .learn {
@@ -1507,6 +1616,14 @@ h1 {
     font-size: 16px;
   }
 }
+@media (max-width: 480px) {
+  .learn {
+    margin-bottom: 80px;
+  }
+  .learn h2 {
+    font-size: 20px;
+  }
+}
 .models-search {
   width: 83.33%;
   max-width: 1200px;
@@ -1686,6 +1803,17 @@ h1 {
   .models-search_img-container {
     width: 75vw;
     height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .models-search_text-container h2 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.4px;
+    margin-bottom: 40px;
+  }
+  .models-search_text-container button {
+    margin-left: 16vw;
   }
 }
 .master-class {
@@ -1979,8 +2107,29 @@ h1 {
     align-items: center;
     gap: 31px;
   }
+  .master-class_cards-container > div {
+    width: 311px;
+  }
+  .master-class_cards-description div:nth-child(1) {
+    width: 221px;
+  }
+  .master-class_cards-description div:nth-child(2) {
+    width: 90px;
+  }
   .display_none {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .master-class h2 {
+    font-size: 20px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .master-class > p {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 249px;
   }
 }
 .why-us {
@@ -2159,6 +2308,34 @@ h1 {
 @media (max-width: 565px) {
   .why-us_card-container > div > div {
     padding-left: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .why-us h2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .why-us h3 {
+    font-size: 15px;
+  }
+  .why-us_card-container > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 94px;
+    padding-top: 35px;
+  }
+  .why-us_card-container > div {
+    height: 220px;
+  }
+  .why-us_card-container > div:nth-child(1) {
+    background-position: bottom 40px left 10px;
+  }
+  .why-us_card-container > div:nth-child(2) {
+    background-position: bottom 40px left 5px;
+  }
+  .why-us_card-container > div:nth-child(3) {
+    background-position: bottom 45px left 5px;
   }
 }
 .special {
