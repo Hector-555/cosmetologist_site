@@ -188,3 +188,14 @@ h1 {
     }
   }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 600px) {
+  .main-section {
+    background-position: right bottom;
+    background-size: 300px 250px;
+  }
+}
+
+// ---------------------------------------

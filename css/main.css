@@ -296,6 +296,43 @@ div .spots_active {
     font-size: 19px;
   }
 }
+@media (max-width: 650px) {
+  .nav-tablet_logo img {
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+  }
+  .nav-tablet_phone {
+    margin-right: -15px;
+  }
+  .nav-tablet_phone img {
+    width: 19px;
+    height: 19px;
+  }
+  .nav-tablet_phone span {
+    margin-left: 13px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 540px) {
+  .nav-tablet_logo img {
+    width: 53px;
+    height: 53px;
+    padding-top: 13px;
+  }
+  .nav-tablet_phone {
+    margin-right: -50px;
+    margin-top: 40px;
+  }
+  .nav-tablet_phone img {
+    width: 15px;
+    height: 15px;
+  }
+  .nav-tablet_phone span {
+    margin-left: 9px;
+    font-size: 14px;
+  }
+}
 .main-section {
   font-family: "Montserrat", sans-serif;
   background-image: url(../img/main-photo.png);
@@ -482,6 +519,12 @@ h1 {
     line-height: 15px;
   }
 }
+@media (max-width: 600px) {
+  .main-section {
+    background-position: right bottom;
+    background-size: 300px 250px;
+  }
+}
 .courses {
   background-color: #fff;
   background-image: url(../img/courses_bgr.png);
@@ -504,7 +547,6 @@ h1 {
 .courses-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1200px;
   gap: 5%;
   margin: 0 auto;
@@ -845,6 +887,7 @@ h1 {
     font-size: 17px;
     line-height: 17px;
     margin-bottom: 7px;
+    letter-spacing: normal;
   }
   .courses_card_format {
     width: 90px;
@@ -882,6 +925,34 @@ h1 {
   .courses_card_btn {
     height: 30px;
     font-size: 11px;
+  }
+}
+@media (max-width: 760px) {
+  .courses {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 202px);
+    gap: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .courses_card {
+    width: 202px;
+  }
+}
+@media (max-width: 700px) {
+  .courses-container:before, .courses-container:after {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .courses_card:nth-child(odd) {
+    background-color: hsl(0, 0%, 90%);
   }
 }
 .about {
@@ -931,7 +1002,7 @@ h1 {
   width: 265px;
   float: right;
 }
-.about_link_tablet {
+.about_link_tablet, .about_link_container {
   display: none;
 }
 .about a {
@@ -1034,7 +1105,7 @@ h1 {
     gap: 7vw;
   }
   .about_img-container {
-    max-width: 276px;
+    width: 276px;
     height: 408px;
   }
   .about_img-container img {
@@ -1070,6 +1141,37 @@ h1 {
   }
   .about a span {
     margin-right: 14px;
+  }
+}
+@media (max-width: 650px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_img-container {
+    order: 1;
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  .about_text {
+    margin: 0 auto;
+  }
+  .about_link_tablet {
+    display: none;
+  }
+  .about_link img {
+    display: none;
+  }
+  .about_link_container {
+    display: block;
+    order: 2;
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+  .about_link_mobile {
+    margin-right: 14px;
+    color: #55a630;
   }
 }
 .learn {
@@ -1280,7 +1382,7 @@ h1 {
 @media (max-width: 768px) {
   .learn {
     max-width: 642px;
-    min-height: 395px;
+    height: 395px;
     padding-left: 62px;
     padding-right: 62px;
     margin-bottom: 101px;
@@ -1330,6 +1432,79 @@ h1 {
   .learn_bottom-block > div:nth-child(3) div {
     margin-left: 59px;
     margin-top: 102px;
+  }
+}
+@media (max-width: 760px) {
+  .learn {
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+}
+@media (max-width: 630px) {
+  .learn {
+    background-image: none;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+  }
+  .learn h2 {
+    margin-bottom: 40px;
+  }
+  .learn_top-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75vw;
+    gap: 21px;
+    margin-bottom: 195px;
+  }
+  .learn_top-block > div {
+    width: 100%;
+  }
+  .learn_top-block > div:first-child div:first-child {
+    margin-left: 9px;
+    margin-top: 113px;
+    margin-bottom: 13px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .learn_top-block > div:last-child div {
+    margin-left: 9px;
+    margin-top: 113px;
+    margin-bottom: 13px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .learn_bottom-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 147px);
+    width: 75vw;
+    gap: 21px;
+  }
+  .learn_bottom-block > div {
+    width: 100%;
+  }
+  .learn_bottom-block > div:first-child div {
+    margin-left: 9px;
+    margin-top: 111px;
+  }
+  .learn_bottom-block > div:nth-child(2) div {
+    margin-left: 18px;
+    margin-top: 111px;
+  }
+  .learn_bottom-block > div:last-child {
+    grid-column: 1/3;
+  }
+  .learn_bottom-block > div:last-child div {
+    margin-left: 9px;
+    margin-top: 111px;
+  }
+}
+@media (max-width: 565px) {
+  .learn a {
+    font-size: 16px;
   }
 }
 .models-search {
@@ -1482,6 +1657,35 @@ h1 {
   .models-search_img-container img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 660px) {
+  .models-search {
+    flex-direction: column;
+    width: 75vw;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .models-search_text-container {
+    width: 100%;
+    margin: 0;
+  }
+  .models-search h2 {
+    text-align: center;
+  }
+  .models-search p {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .models-search button {
+    width: 210px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 24px;
+  }
+  .models-search_img-container {
+    width: 75vw;
+    height: auto;
   }
 }
 .master-class {
@@ -1764,6 +1968,21 @@ h1 {
     height: 66px;
   }
 }
+@media (max-width: 715px) {
+  .master-class_cards-container:before, .master-class_cards-container:after {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  .master-class_cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+  }
+  .display_none {
+    display: none;
+  }
+}
 .why-us {
   margin-bottom: 166px;
 }
@@ -1929,6 +2148,19 @@ h1 {
     background-position: bottom 7px left 5px;
   }
 }
+@media (max-width: 700px) {
+  .why-us_card-container {
+    width: 76.67vw;
+  }
+  .why-us_card-container > div {
+    min-height: 220px;
+  }
+}
+@media (max-width: 565px) {
+  .why-us_card-container > div > div {
+    padding-left: 160px;
+  }
+}
 .special {
   margin-bottom: 175px;
   position: relative;
@@ -2032,6 +2264,32 @@ h1 {
   .special_card-container:after {
     right: -4%;
     top: 51%;
+  }
+}
+@media (max-width: 760px) {
+  .special {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .special_card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 196px);
+    gap: 25px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .special_card-container div {
+    width: 196px;
+  }
+  .special_card-container div img {
+    width: 100%;
+  }
+}
+@media (max-width: 645px) {
+  .special_card-container > div:nth-child(odd) img {
+    filter: brightness(65%);
   }
 }
 .form {
@@ -2153,6 +2411,13 @@ h1 {
     margin-bottom: 34px;
   }
 }
+@media (max-width: 650px) {
+  .form {
+    width: 75vw;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
 .footer {
   max-width: 1440px;
   margin: 0 auto;
@@ -2267,6 +2532,9 @@ h1 {
 .footer-links_confidential:active {
   color: #55a630;
 }
+.footer-links_confidential-480 {
+  display: none;
+}
 
 @media (max-width: 1000px) {
   .footer {
@@ -2356,6 +2624,48 @@ h1 {
   .footer-links_confidential {
     line-height: 26px;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 532px 272px 35px;
+  }
+  .footer_map {
+    order: 1;
+    width: 100%;
+  }
+  .footer_info {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .footer_contacts {
+    align-items: center;
+  }
+  .footer-links_confidential {
+    margin-bottom: 0;
+  }
+  .footer-links_confidential-480 {
+    display: block;
+    order: 2;
+    height: 35px;
+    width: 100%;
+    background-color: #424242;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .footer-links_confidential-480 button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .footer-links_confidential-main {
+    display: none;
   }
 }
 body {

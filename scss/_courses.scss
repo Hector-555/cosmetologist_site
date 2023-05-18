@@ -19,7 +19,6 @@
     &-container {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         max-width: 1200px;
         gap: 5%;
         margin: 0 auto;
@@ -390,6 +389,7 @@
                 font-size: 17px;
                 line-height: 17px;
                 margin-bottom: 7px;
+                letter-spacing: normal;
             }
             &_format {
                 width: 90px;
@@ -431,3 +431,39 @@
         }
     }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 760px) {
+    .courses {
+        width: 100vw;
+        overflow: hidden;
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(3, 202px);
+            gap: 20px;
+            width: fit-content;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        &_card {
+            width: 202px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .courses-container {
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .courses_card:nth-child(odd) {
+        background-color: hsl(0, 0%, 90%);
+    }
+}
+
+// ---------------------------------------

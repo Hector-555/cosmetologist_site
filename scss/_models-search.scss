@@ -167,3 +167,37 @@
         }
     }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 660px) {
+    .models-search {
+        flex-direction: column;
+        width: 75vw;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        &_text-container {
+            width: 100%;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        button {
+            width: 210px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+            margin-bottom: 24px;
+        }
+        &_img-container {
+            width: 75vw;
+            height: auto;
+        }
+    }
+}
+
+// ---------------------------------------

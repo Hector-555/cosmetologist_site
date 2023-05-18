@@ -44,7 +44,7 @@
     &_link {
         width: 265px;
         float: right;
-        &_tablet {
+        &_tablet, &_container {
             display: none;
         }
     }
@@ -172,7 +172,7 @@
         padding: 0;
         gap: 7vw;
         &_img-container {
-            max-width: 276px;
+            width: 276px;
             height: 408px;
             img {
                 width: 100%;
@@ -213,3 +213,41 @@
         }
     }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 650px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        &_img-container {
+            order: 1;
+            width: 95vw;
+            height: auto;
+            margin: 0 auto;
+        }
+        &_text {
+            margin: 0 auto;
+        }
+        &_link_tablet {
+            display: none;
+        }
+        &_link {
+            img {
+                display: none;
+            }
+            &_container {
+                display: block;
+                order: 2;
+                align-self: flex-end;
+                margin-right: 5%;
+            }
+            &_mobile {
+                margin-right: 14px;
+                color: $green;
+            }
+        }
+    }
+}
+
+// ---------------------------------------

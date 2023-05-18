@@ -104,3 +104,34 @@
         }
     }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 760px) {
+    .special {
+        width: 100vw;
+        overflow: hidden;
+        &_card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 196px);
+            gap: 25px;
+            width: fit-content;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            div {
+                width: 196px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    .special_card-container > div:nth-child(odd) img {
+        filter: brightness(65%);
+    }
+}
+
+// ---------------------------------------

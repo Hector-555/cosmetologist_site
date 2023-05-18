@@ -296,3 +296,30 @@
         }
     }
 }
+
+// Промежуточный адаптив (768px - 480px)
+
+@media (max-width: 715px) {
+    .master-class {
+        &_cards-container {
+            &:before, &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .master-class {
+        &_cards-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 31px;
+        }
+    }
+    .display_none {
+        display: none;
+    }
+}
+
+// ---------------------------------------
