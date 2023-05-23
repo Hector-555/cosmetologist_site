@@ -188,12 +188,14 @@
 
 @media (max-width: 480px) {
     .why-us {
+        margin-bottom: 80px;
         h2 {
             margin-bottom: 40px;
             font-size: 20px;
         }
         h3 {
             font-size: 15px;
+            line-height: 26px;
         }
     }
     .why-us_card-container > div > div {
@@ -202,8 +204,12 @@
         justify-content: center;
         padding-left: 94px;
         padding-top: 35px;
+        p {
+            line-height: 19px;
+        }
     }
     .why-us_card-container {
+        gap: 40px;
         > div {
             height: 220px;
         }
@@ -218,3 +224,20 @@
         }
     }
 }
+
+// Промежуточный адаптив (480px - 320px)
+
+@media (max-width: 475px) {
+    .why-us_card-container > div > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .why-us_card-container {
+        width: 95vw;
+    }
+}
+
+// ---------------------------------------

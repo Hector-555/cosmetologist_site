@@ -488,3 +488,16 @@
     }
  }
 }
+
+// Промежуточный адаптив (480px - 320px)
+
+@media (max-width: 455px) {
+    .courses {
+        background-image: none;
+        h2 {
+            padding-top: 350px;
+        }
+    }
+}
+
+// ---------------------------------------

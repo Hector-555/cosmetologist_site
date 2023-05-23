@@ -368,3 +368,13 @@
         }
     }
 }
+
+// Промежуточный адаптив (480px - 320px)
+
+@media (max-width: 380px) {
+    .learn_top-block, .learn_bottom-block {
+        width: 95vw;
+    }
+}
+
+// ---------------------------------------

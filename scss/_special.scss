@@ -135,3 +135,17 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .special {
+        margin-bottom: 80px;
+        h2 {
+            font-size: 20px;
+            line-height: 13px;
+            margin-bottom: 41px;
+        }
+        &_card-container {
+            margin-bottom: 40px;
+        }
+    }
+}

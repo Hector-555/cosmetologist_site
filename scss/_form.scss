@@ -130,3 +130,32 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .form {
+        h3 {
+            font-size: 20px;
+            line-height: 17px;
+            padding-top: 32px;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 20px;
+            margin-bottom: 41px;
+            max-width: 273px;
+        }
+        form {
+            width: 297px;
+        }
+    }
+}
+
+// Промежуточный адаптив (480px - 320px)
+
+@media (max-width: 410px) {
+    .form {
+        width: 95vw;
+    }
+}
+
+// ---------------------------------------

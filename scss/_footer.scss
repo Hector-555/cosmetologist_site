@@ -195,10 +195,6 @@
         &-links_socials {
             gap: 24px;
             margin-bottom: 64px;
-            img {
-                width: 24px;
-                height: 24px;
-            }
         }
         &-links_confidential {
             line-height: 26px;
@@ -253,3 +249,48 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 480px) {
+    .footer {
+        &_contacts {
+            a:first-child {
+                padding-top: 26px;
+                margin-bottom: 36px;
+            }
+            img {
+                width: 55px;
+                height: 55px;
+            }
+            a:nth-child(2) {
+                font-size: 20px;
+                margin-bottom: 7px;
+            }
+            a:nth-child(3) {
+                margin-bottom: 57px;
+            }
+        }
+        &-links {
+            margin-bottom: 50px;
+            &_left-block {
+                margin-right: 73px;
+                gap: 20x;
+                line-height: 16px;
+            }
+            &_right-block {
+                gap: 23px;
+                line-height: 14px;
+            }
+            &_socials {
+                margin-bottom: 37px;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            &_confidential {
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+}
