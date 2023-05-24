@@ -280,3 +280,33 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .about {
+        width: 95vw;
+        text-align: center;
+        gap: 0;
+        h3 {
+            line-height: 24px;
+        }
+        &_text h3 span {
+            display: block;
+        }
+        &_text h3 span:after {
+            content: '';
+        }
+        p:nth-child(3) {
+            line-height: 16px;
+            span {
+                display: none;
+            }
+        }
+        &_img-container {
+            width: 95vw;
+            margin-bottom: 23px;
+        }
+        &_link_container {
+            align-self: center;
+        }
+    }
+}

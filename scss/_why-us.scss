@@ -230,7 +230,7 @@
 @media (max-width: 475px) {
     .why-us_card-container > div > div {
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 15px;
     }
 }
 
@@ -241,3 +241,23 @@
 }
 
 // ---------------------------------------
+
+@media (max-width: 320px) {
+    .why-us h3 {
+        text-align: center;
+    }
+    .why-us_card-container {
+        > div:nth-child(1) {
+            background-size: 49px 36px;
+            background-position: top 15px left 50%;
+        }
+        > div:nth-child(2) {
+            background-size: 49px 36px;
+            background-position: top 15px left 50%;
+        }
+        > div:nth-child(3) {
+            background-size: 49px 36px;
+            background-position: top 15px left 50%;
+        }
+    }
+}

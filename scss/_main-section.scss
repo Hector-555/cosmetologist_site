@@ -295,8 +295,17 @@ h1 {
     }
   }
   .achievements {
-    bottom: -242px;
-  }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 35px);
+        bottom: -200px;
+        div {
+          display: grid;
+          grid-template-columns: 90px 90px;
+          justify-items: start;
+          align-items: center;
+        }
+      }
 }
 
 @media (max-width: 350px) {
@@ -323,7 +332,8 @@ h1 {
     width: 180px;
     height: 188px;
     gap: 10px;
-    bottom: -193px;
+    bottom: -145px;
+    padding: 0 15px;
     span {
       font-size: 17px;
       line-height: 45px;
@@ -336,3 +346,14 @@ h1 {
 }
 
 // ---------------------------------------
+
+@media (max-width: 320px) {
+  .main-section {
+    &_short_description {
+      margin-bottom: 7px;
+    }
+    h1 {
+      margin-bottom: 12px;
+    }
+  }
+}

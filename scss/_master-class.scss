@@ -134,12 +134,24 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     .master-class_arrow-bold {
         right: -25%;
     }
     .master-class_arrow-thin {
         right: 7%;
+    }
+    .master-class_cards-price {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .master-class_arrow-bold {
+        display: none;
+    }
+    .master-class_arrow-thin {
+        display: none;
     }
     .master-class_cards-price {
         letter-spacing: -1px;
@@ -160,9 +172,6 @@
         }
         > p {
             font-size: 20px;
-        }
-        &_arrow-bold, &_arrow-thin {
-            display: none;
         }
         &_cards-container {
             width: auto;
@@ -346,6 +355,34 @@
             margin: 0 auto;
             margin-bottom: 40px;
             width: 249px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .master-class {
+        margin-bottom: 80px;
+        h2 {
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        > p {
+            line-height: 18px;
+        }
+        &_cards-container {
+            margin-bottom: 18px;
+            > div {
+                width: 300px;
+            }
+        }
+    }
+    .display_none {
+        display: flex;
+        width: 73px;
+        height: 9px;
+        div {
+            width: 9px;
+            height: 9px;
         }
     }
 }

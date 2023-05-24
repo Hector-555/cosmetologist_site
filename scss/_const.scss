@@ -134,3 +134,14 @@ $green-blue: #00a896;
         }
     }
 }
+
+@media (max-width: 480px) {
+    .spots {
+        width: 47px;
+        height: 5px;
+        div {
+            width: 5px;
+            height: 5px;
+        }
+    }
+}

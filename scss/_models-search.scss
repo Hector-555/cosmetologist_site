@@ -225,8 +225,23 @@
         width: 95vw;
         &_img-container {
             width: 95vw;
+            height: 154px;
         }
     }
 }
 
 // ---------------------------------------
+
+@media (max-width: 320px) {
+    .models-search {
+        text-align: center;
+        &_text-container {
+            p {
+                line-height: 16px;
+            }
+            button {
+                margin-bottom: 29px;
+            }
+        }
+    }
+}

@@ -371,10 +371,58 @@
 
 // Промежуточный адаптив (480px - 320px)
 
-@media (max-width: 380px) {
-    .learn_top-block, .learn_bottom-block {
+@media (max-width: 460px) {
+    .learn {
+        margin-bottom: 80px;
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .learn_top-block {
         width: 95vw;
+    }
+    .learn_bottom-block {
+        width: 95vw;
+        > div:first-child {
+            div {
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 325px) {
+    .learn_bottom-block {
+        > div:nth-child(2) {
+            div {
+                margin-left: 17px;
+            }
+        }
+        > div:last-child {
+            div {
+                margin-left: 11px;
+            }
+        }
     }
 }
 
 // ---------------------------------------
+
+@media (max-width: 320px) {
+    .learn {
+        p {
+            line-height: 19px;
+        }
+        &_top-block {
+            > div:first-child div:first-child {
+                margin-left: 25px;
+            }
+            > div:last-child div {
+                margin-left: 25px;
+            }
+        }
+    }
+}

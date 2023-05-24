@@ -494,10 +494,22 @@
 @media (max-width: 455px) {
     .courses {
         background-image: none;
-        h2 {
+        &-title_768px {
             padding-top: 350px;
         }
     }
 }
+
+@media (max-width: 420px) {
+ .courses-title_768px {
+    padding-top: 285px;
+ }
+}
+
+@media (max-width: 350px) {
+    .courses-title_768px {
+       padding-top: 221px;
+    }
+   }
 
 // ---------------------------------------
